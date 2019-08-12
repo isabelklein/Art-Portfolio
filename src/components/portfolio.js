@@ -3,10 +3,10 @@ import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 
 const photos = [
-  { src: '/portfolio/0.jpg', width: 3, height: 2 },
-  { src: '/portfolio/1.jpg', width: 3, height: 2 },
-  { src: '/portfolio/2.jpg', width: 4, height: 3 },
-  { src: '/portfolio/3.jpg', width: 4, height: 3 },
+  { src: '/portfolio/0.jpg', width: 3, height: 4 },
+  { src: '/portfolio/1.jpg', width: 3, height: 4 },
+  { src: '/portfolio/2.jpg', width: 4, height: 4 },
+  { src: '/portfolio/3.jpg', width: 4, height: 4 },
   { src: '/portfolio/4.jpg', width: 4, height: 3 },
   { src: '/portfolio/5.jpg', width: 1, height: 1 },
   { src: '/portfolio/6.jpg', width: 4, height: 3 },
