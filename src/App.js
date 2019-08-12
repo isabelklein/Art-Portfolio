@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Portfolio from './components/portfolio';
 
 class App extends React.Component {
-
-  state = {
-    something:[]
-  }
-
-function App() {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-
+        <div className="top-border"></div>
+        <header className="App-header">Isabel Klein
+          <div className="description">
+          artist and illustrator
+          </div>
         </header>
+      <div className="portfolio">
+      <Portfolio />
+      </div>
       </div>
     );
   }
 }
-}
+
 
 export default App;

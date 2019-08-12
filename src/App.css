@@ -1,16 +1,44 @@
 .App {
-  text-align: center;
+  text-align: left;
   height: 100%;
-  background: whitesmoke;
+  background: white;
+  padding: 20px;
+}
+
+.top-border {
+  background-color: white;
+  height: 22px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
 }
 
 .App-header {
-  background-color: #282c34;
-  height: 100vh;
+  background-color: white;
+  height: 100%;
+  width: 20%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(20px + 2vmin);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  position: fixed;
+  z-index: 2;
+}
+
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  font-size: 16px;
+}
+
+.portfolio {
+  top: 20px;
+  z-index: 1;
+  width: 80%;
+  margin-left: 20%;
 }
