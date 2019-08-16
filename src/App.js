@@ -18,9 +18,9 @@ class App extends React.Component {
         <header className="App-header">Isabel Klein
           <div className="description">
             artist and illustrator 
-            <Link to ="/work"> <button className="navigation" style={{top:"170px"}}>WORK</button></Link>
-            <Link to ="/about"> <button className="navigation" style= {{top:"200px"}}>ABOUT</button></Link>
-            <Link to ="/contact"> <button className="navigation" style={{top:"230px"}}>CONTACT</button></Link>
+            <Link to ="/work"> <button className="navigation" style={{top:"150px"}}>WORK</button></Link>
+            <Link to ="/about"> <button className="navigation" style= {{top:"180px"}}>ABOUT</button></Link>
+            <Link to ="/contact"> <button className="navigation" style={{top:"210px"}}>CONTACT</button></Link>
           </div>
         </header>
       
