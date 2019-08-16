@@ -24,8 +24,9 @@
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  font-size: calc(20px + 2vmin);
-  color: rgb(252, 176, 170);
+  font-size: calc(16px + 2vmin);
+  /*color: rgb(252, 176, 170);*/
+  color: black;
   font-family: 'Libre Baskerville', serif;
   padding: 10px;
   position: fixed;
@@ -102,7 +103,7 @@
 }
 
 .column {
-  flex: 25%;
+  flex: 35%;
   padding: 0 4px;
 }
 
