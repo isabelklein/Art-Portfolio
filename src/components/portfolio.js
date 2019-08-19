@@ -1,6 +1,6 @@
 import React from 'react';
 import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
+import '../style.css';
 
 var images = [
   { name: "0", alt: "" },
