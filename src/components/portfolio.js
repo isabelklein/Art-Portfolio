@@ -5,10 +5,10 @@ import '../style.css';
 var images = [
   { name: "0", alt: "" },
   { name: "1", alt: "" },
-  // { name: "2", alt: "" },
+  { name: "2", alt: "" },
   { name: "3", alt: "" },
   { name: "4", alt: "" },
-  // { name: "5", alt: "" },
+  { name: "5", alt: "" },
   { name: "6", alt: "" },
   { name: "7", alt: "" },
   { name: "8", alt: "" },
@@ -24,12 +24,8 @@ var images = [
   { name: "18", alt: "" },
   { name: "19", alt: "" },
   { name: "20", alt: "" },
-  // { name: "21", alt: "" },
-  { name: "22", alt: "" },
-  { name: "23", alt: "" },
-  // { name: "24", alt: "" },
-  { name: "25", alt: "" },
-  { name: "26", alt: "" },
+  { name: "21", alt: "" },
+  { name: "22", alt: "" }
 ]
 
 
@@ -39,15 +35,17 @@ export default class Portfolio extends React.Component {
     isOpen: false,
   }
 
-  // To make 3 columns, include var third, and make var allImages = [first, second, third]
+  // To make 3 columns:
+  //    var allImages = [first, second, third] 
+  //    var index = Math.round(images.length / 3)
+  //    var third = images.slice(index * 2, images.length)
+
   render() {
     const { photoIndex, isOpen } = this.state;
-    var index = Math.round(images.length / 3)
+    var index = Math.round(images.length / 2)
     var first = images.slice(0, index)
     var second = images.slice(index, index * 2)
-    // var third = images.slice(index * 2, images.length)
 
-    // var allImages = [first, second, third]
     var allImages = [first, second]
     return (
       <div class="row">
@@ -65,7 +63,7 @@ export default class Portfolio extends React.Component {
         <div>
           {isOpen && (
             <Lightbox
-              mainSrc={"/portfolio/" + images[photoIndex].name + ".jpg"}
+              mainSrc={process.env.PUBLIC_URL + "/portfolio/" + images[photoIndex].name + ".jpg"}
               nextSrc={images[(photoIndex + 1) % images.length]}
               prevSrc={images[(photoIndex + images.length - 1) % images.length]}
               onCloseRequest={() => this.setState({ isOpen: false })}
