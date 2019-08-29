@@ -4,8 +4,6 @@ import '../style.css';
 
 var images = [
   { name: "0", alt: "" },
-  { name: "0", alt: "" },
-  { name: "1", alt: "" },
   { name: "1", alt: "" },
   { name: "2", alt: "" },
   { name: "3", alt: "" },
@@ -17,8 +15,6 @@ var images = [
   { name: "9", alt: "" },
   { name: "10", alt: "" },
   { name: "11", alt: "" },
-  { name: "11", alt: "" },
-  { name: "12", alt: "" },
   { name: "12", alt: "" },
   { name: "13", alt: "" },
   { name: "14", alt: "" },
@@ -28,8 +24,7 @@ var images = [
   { name: "18", alt: "" },
   { name: "19", alt: "" },
   { name: "20", alt: "" },
-  { name: "21", alt: "" },
-  { name: "22", alt: "" }
+  { name: "21", alt: "" }
 ]
 
 
