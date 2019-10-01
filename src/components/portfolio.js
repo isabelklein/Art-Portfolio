@@ -51,7 +51,7 @@ export default class Portfolio extends React.Component {
         {allImages.map(imgs=>{
           return <div class="column">
             {imgs.map((image,i) => {
-              return (<img src={process.env.PUBLIC_URL + "/portfolio/" + image.name + ".jpg"} alt=""
+              return (<img src={process.env.PUBLIC_URL + "../portfolio/" + image.name + ".jpg"} alt=""
                 onClick={() => this.setState({ isOpen: true, photoIndex: 
                   images.findIndex(img=>img.name===image.name) })}>
               </img>)
