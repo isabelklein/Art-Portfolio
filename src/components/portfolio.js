@@ -51,7 +51,7 @@ export default class Portfolio extends React.Component {
         {allImages.map(imgs=>{
           return <div class="column">
             {imgs.map((image,i) => {
-              return (<img src={process.env.PUBLIC_URL + "/portfolio/" + image.name + ".jpg"} alt=""
+              return (<img src={process.env.PUBLIC_URL + "/portfolio/" + image.name + ".png"} alt=""
                 onClick={() => this.setState({ isOpen: true, photoIndex: 
                   images.findIndex(img=>img.name===image.name) })}>
               </img>)
@@ -62,7 +62,7 @@ export default class Portfolio extends React.Component {
         <div>
           {isOpen && (
             <Lightbox
-              mainSrc={process.env.PUBLIC_URL + "/portfolio/" + images[photoIndex].name + ".jpg"}
+              mainSrc={process.env.PUBLIC_URL + "/portfolio/" + images[photoIndex].name + ".png"}
               nextSrc={images[(photoIndex + 1) % images.length]}
               prevSrc={images[(photoIndex + images.length - 1) % images.length]}
               onCloseRequest={() => this.setState({ isOpen: false })}
